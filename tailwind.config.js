@@ -5,6 +5,15 @@ export default {
     "./src/**/*.{js,ts,jsx,tsx}",
   ],
   theme: {
+    fontSize: {
+      sm: '10px',
+      base: '12px',
+      xl: '16px',
+      '2xl': '20px',
+      '3xl': '24px',
+      '4xl': '32px',
+      '5xl': '48px',
+    },
     extend: {
       fontFamily: {
         'manrope': ['Manrope', 'serif'],
