@@ -5,7 +5,17 @@ export default {
     "./src/**/*.{js,ts,jsx,tsx}",
   ],
   theme: {
-    extend: {},
+    extend: {
+      fontFamily: {
+        'manrope': ['Manrope', 'serif'],
+      },
+      colors: {
+        'black2': '#252f3d',
+        'blacktext': '#4d5254',
+        'white2': '#edf3fd',
+        'blue2': '#2c7ef8',
+      },
+    },
   },
   plugins: [],
 }
