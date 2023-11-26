@@ -21,7 +21,7 @@
 <!-- PROJECT DESCRIPTION -->
 
 # 📖 [clarifion] <a name="about-project"></a>
-clarifion, is a webpage built with Vite, React-Redux and TailwindCSS
+clarifion, is a webpage built with Vite, React-Redux and TailwindCSS, that display a clarifion to buy.
 
 ## 🛠 Built With <a name="built-with"></a>
 
@@ -151,7 +151,7 @@ If you like this project give it a star ⭐️
 
 ## 🙏 Acknowledgments <a name="acknowledgements"></a>
 
-Credits to Cindy Shin, the author of the [Original Design](https://www.behance.net/gallery/29845175/CC-Global-Summit-2015)
+Credits to the author of the [Original Design](https://www.figma.com/file/gHf56mhtFr0lXky0poofoQ/ejam---Clarifion-Upsell-%5B-Client-V-%5D-(Copy)?type=design&node-id=1-2&mode=design&t=VOGFPgkNsmt9A3WU-0)
 
 ** I would like to thank to Microverse for giving this inspiring project **
 
