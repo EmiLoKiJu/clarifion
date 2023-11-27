@@ -1,13 +1,13 @@
 import { useSelector, useDispatch } from 'react-redux';
 
-import { next, prev } from '../redux/navtext/navtextSlice';
+import { next, prev } from '@/redux/navtext/navtextSlice';
 
 import nextarrow from '@/assets/next-arrow.svg';
 import prevarrow from '@/assets/prev-arrow.svg';
 import checknav from '@/assets/checkmark-navbar.svg';
 import truck from '@/assets/truck-light.svg';
-import moneyback from '../assets/money-back.svg';
-import hearth from '../assets/hearth.svg';
+import moneyback from '@/assets/money-back.svg';
+import hearth from '@/assets/hearth.svg';
 
 const Nav = ()=> {
   const dispatch = useDispatch();

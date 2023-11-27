@@ -1,4 +1,4 @@
-import lock2 from '../assets/lock2.svg';
+import lock2 from '@/assets/lock2.svg';
 
 const footer = () => {
   return (
