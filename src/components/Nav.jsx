@@ -1,6 +1,6 @@
 import { useSelector, useDispatch } from 'react-redux';
 
-import { next, prev } from '../redux/navtext/navtextSlice';
+import { next, prev } from '@/redux/navtext/navtextSlice';
 
 import nextarrow from '@/assets/next-arrow.svg';
 import prevarrow from '@/assets/prev-arrow.svg';

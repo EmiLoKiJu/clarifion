@@ -1,6 +1,6 @@
 import { useState } from "react";
 
-import logo from '@/assets/logo-with-text.svg';
+import logo from '@/assets/Logo-with-text.svg';
 import mcafee from '@/assets/McAfee-secure.svg';
 import norton from '@/assets/norton-antivirus.svg';
 import checkedstep from '@/assets/checked-step.svg';
@@ -118,7 +118,7 @@ const Clarifion = ()=> {
                 <img className='bg-blue2 rounded-md mr-4 hover:bg-blue-700 lg:hidden cursor-pointer' src={clarifion} alt="clarifionIMG" onClick={() => toggleSelected()} />
               </div>
               <div className='py-2 flex flex-col justify-between flex-1 md:py-0'>
-                <div className='flex justify-between text-base md:text-2xl'>
+                <div className='flex justify-between text-base md:text-2xl lg:text-xl xl:text-2xl'>
                   Clarifion Air Ionizer
                   <div className='flex justify-between items-center'>
                     <div className='text-[10px] line-through text-[#969696] mr-2 md:text-xl'>$180</div>
@@ -188,7 +188,7 @@ const Clarifion = ()=> {
 
           <button className="bg-[#59ae43] text-white flex items-center w-full justify-center rounded-[36px]" onClick={() => toggleVideo()}>
             <div className="flex py-4">
-              <div className="text-base text-bold pr-4 md:text-2xl">YES - CLAIM MY DISCOUNT</div>
+              <div className="text-base text-bold pr-4 md:text-2xl lg:text-xl xl:text-2xl">YES - CLAIM MY DISCOUNT</div>
               <img src={arrow} alt="arrow" />
             </div>
           </button>
