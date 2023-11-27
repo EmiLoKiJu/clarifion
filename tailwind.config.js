@@ -6,8 +6,8 @@ export default {
   ],
   theme: {
     fontSize: {
-      sm: '10px',
-      base: '12px',
+      sm: '12px',
+      base: '14px',
       xl: '16px',
       '2xl': '20px',
       '3xl': '24px',
