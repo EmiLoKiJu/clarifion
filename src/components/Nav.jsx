@@ -16,14 +16,13 @@ const Nav = ()=> {
   const imgurl = [checknav, truck, moneyback, hearth]
 
   return(
-    <div className='z-50 flex flex-col fixed'>
+    <div className='font-manrope z-50 flex flex-col fixed'>
       <nav className="bg-black2 flex justify-between items-center fixed w-full text-base text-white">
         <img className='px-5' src={prevarrow} alt="prev" onClick={() => dispatch(prev())} />
         <div className='flex justify-center items-center'>
           <img className='py-[10px] pr-2' src={imgurl[navtext.current]} alt="current" />
           {navtext.textarr[navtext.current]}
         </div>
-        
         <img className='px-5' src={nextarrow} alt="next" onClick={() => dispatch(next())} />
       </nav>
     </div>
