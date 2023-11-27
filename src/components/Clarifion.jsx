@@ -12,6 +12,7 @@ import clarifion from '@/assets/clarifion-nobg.svg';
 import bigclarifion from '@/assets/image4.png';
 import checkblue from '@/assets/tick-blue.svg';
 import discount from '@/assets/discount-percent.svg';
+import arrow from '@/assets/arrow-right.svg';
 
 const Clarifion = ()=> {
   const [clarifionSelected, setClarifionSelected] = useState(false);
@@ -115,6 +116,13 @@ const Clarifion = ()=> {
           for only 
           <span className="text-blue2"> $14 Each.</span></div>
       </div>
+
+      <button className="bg-[#59ae43] text-white flex items-center w-full justify-center rounded-[36px]">
+        <div className="flex py-4">
+          <div className="text-base text-bold pr-4">YES - CLAIM MY DISCOUNT</div>
+          <img src={arrow} alt="arrow" />
+        </div>
+      </button>
       
     </div>
   );
