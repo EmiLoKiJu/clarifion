@@ -13,6 +13,14 @@ import bigclarifion from '@/assets/image4.png';
 import checkblue from '@/assets/tick-blue.svg';
 import discount from '@/assets/discount-percent.svg';
 import arrow from '@/assets/arrow-right.svg';
+import lock from '@/assets/lock.svg';
+import visa from '@/assets/visa.svg';
+import shoppay from '@/assets/shop-pay.svg';
+import paypal from '@/assets/paypal.svg';
+import mastercard from '@/assets/mastercard.svg';
+import gpay from '@/assets/gpay.svg';
+import applepay from '@/assets/apple-pay.svg';
+import amex from '@/assets/amex.svg';
 
 const Clarifion = ()=> {
   const [clarifionSelected, setClarifionSelected] = useState(false);
@@ -21,11 +29,11 @@ const Clarifion = ()=> {
   };
 
   return(
-    <div className="flex flex-col items-center text-black mt-10 p-5">
-      <div className='flex w-full justify-between'>
+    <div className="flex flex-col items-center text-black mt-10 px-5">
+      <div className='flex w-full justify-between bg-white p-5'>
         <img src={logo} alt="logo clarifion" />
         <div className='flex justify-between'>
-          <img className='px-4' src={mcafee} alt="mcafee" />
+          <img className='mx-4' src={mcafee} alt="mcafee" />
           <img src={norton} alt="norton" />
         </div>
       </div>
@@ -123,6 +131,24 @@ const Clarifion = ()=> {
           <img src={arrow} alt="arrow" />
         </div>
       </button>
+      <div className="flex flex-col px-4 py-2 rounded border border-[#cfcfcf] my-3 text-sm w-full items-center">
+        <div className="flex w-full justify-between items-center  ">
+          <div>Free shipping</div>
+          <span className="flex h-[14px] w-[1px] bg-[#cfcfcf]"></span>
+          <img src={lock} alt="lock" />
+          <div>Secure 256-bit SSL encryption</div>
+        </div>
+        <span className="flex h-[1px] w-full bg-[#cfcfcf] my-3"></span>
+        <div className="flex">
+          <img className="px-[1px]" src={visa} alt="visa" />
+          <img className="px-[1px]" src={shoppay} alt="shop-pay" />
+          <img className="px-[1px]" src={paypal} alt="paypal" />
+          <img className="px-[1px]" src={mastercard} alt="mastercard" />
+          <img className="px-[1px]" src={gpay} alt="gpay" />
+          <img className="px-[1px]" src={applepay} alt="apple pay" />
+          <img className="px-[1px]" src={amex} alt="amex" />
+        </div>
+      </div>
       
     </div>
   );
