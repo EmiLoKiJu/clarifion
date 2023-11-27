@@ -21,6 +21,7 @@ import mastercard from '@/assets/mastercard.svg';
 import gpay from '@/assets/gpay.svg';
 import applepay from '@/assets/apple-pay.svg';
 import amex from '@/assets/amex.svg';
+import satisfaction from '@/assets/satisfaction.svg';
 
 const Clarifion = ()=> {
   const [clarifionSelected, setClarifionSelected] = useState(false);
@@ -68,7 +69,7 @@ const Clarifion = ()=> {
         <span className="text-blue2">$14 Each </span>
         <span className="text-black">($84.00 Total!)</span>
       </div>
-      { clarifionSelected? (<img className="pb-6" src={bigclarifion} alt="bigclarifion" ></img>) : (<div></div>) }
+      { clarifionSelected? (<img className="pb-6" id="big-clarifion" src={bigclarifion} alt="bigclarifion" ></img>) : (<div></div>) }
 
       <div className='w-full'>
         <div className='flex justify-between w-full'>
@@ -131,6 +132,7 @@ const Clarifion = ()=> {
           <img src={arrow} alt="arrow" />
         </div>
       </button>
+
       <div className="flex flex-col px-4 py-2 rounded border border-[#cfcfcf] my-3 text-sm w-full items-center">
         <div className="flex w-full justify-between items-center  ">
           <div>Free shipping</div>
@@ -148,6 +150,15 @@ const Clarifion = ()=> {
           <img className="px-[1px]" src={applepay} alt="apple pay" />
           <img className="px-[1px]" src={amex} alt="amex" />
         </div>
+      </div>
+
+      <div className="font-medium text-[#f82c2c] underline text-sm">
+        NO THANKS, I DON&apos;T WANT THIS.
+      </div>
+
+      <div className="flex justify-between items-start mt-6 mb-[50px] text-sm">
+        <img className="mr-4" src={satisfaction} alt="satisfaction guarantee" />
+        <div>If you are not completely thrilled with your Clarifion - We have a <span className="font-bold">30 day satisfaction guarantee.</span> Please refer to our return policy at the bottom of the page for more details. Happy Shopping!</div>
       </div>
       
     </div>
