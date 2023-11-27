@@ -39,7 +39,7 @@ const Clarifion = ()=> {
   };
 
   return(
-    <div className="flex flex-col items-center text-black mt-10 px-5 md:px-16 lg:px-20 xl:px-32 bg-white">
+    <div className="flex flex-col items-center text-black mt-10 px-5 md:px-12 lg:px-18 xl:px-32 bg-white">
       <div className='flex w-full justify-between p-5'>
         <img src={logo} alt="logo clarifion" />
         <div className='flex justify-between'>
@@ -76,12 +76,12 @@ const Clarifion = ()=> {
         <div className="mr-10">
           <div>
             <img className="hidden lg:block" id="big-clarifion" src={bigclarifion} alt="bigclarifion" ></img>
-            <div className="hidden lg:flex flex-col">
+            <div className="hidden lg:flex flex-col bg-white rounded-[16px] mt-6 p-6">
               <div className="flex">
-                <div>
+                <div className="mr-2">
                   <img src={user1} alt="user" />
                 </div>
-                <div>
+                <div className="flex flex-col justify-center">
                   <div className="flex">
                     <img src={star2} alt="star" />
                     <img src={star2} alt="star" />
@@ -90,13 +90,13 @@ const Clarifion = ()=> {
                     <img src={star2} alt="star" />
                   </div>
                   <div className="flex">
-                    <div>Ken T.</div>
-                    <img src={verified} alt="verifiedicon" />
+                    <div className="text-[#333333] font-bold">Ken T.</div>
+                    <img src={verified} className="mx-2" alt="verifiedicon" />
                     <div>Verified Customer</div>
                   </div>
                 </div>
               </div>
-              <div>“As soon as the Clarifions arrived I put one in my bedroom. This was late in the afternoon. When I went to the bedroom in the evening it smelled clean. When I went to bed I felt I could breathe better. Wonderful.”</div>
+              <div className="text-xl text-blacktext">“As soon as the Clarifions arrived I put one in my bedroom. This was late in the afternoon. When I went to the bedroom in the evening it smelled clean. When I went to bed I felt I could breathe better. Wonderful.”</div>
             </div>
           </div>
           
