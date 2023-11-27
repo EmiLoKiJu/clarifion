@@ -1,4 +1,4 @@
-import React, { useState } from "react";
+import { useState } from "react";
 
 import logo from '@/assets/logo-with-text.svg';
 import mcafee from '@/assets/McAfee-secure.svg';
