@@ -25,6 +25,7 @@ import satisfaction from '@/assets/satisfaction.svg';
 import user1 from '@/assets/user1.png';
 import star2 from '@/assets/star2.svg';
 import verified from '@/assets/Verified.svg';
+import clarifion2md from '@/assets/clarifion2md.svg';
 
 const Clarifion = ()=> {
   const [clarifionSelected, setClarifionSelected] = useState(false);
@@ -32,8 +33,13 @@ const Clarifion = ()=> {
     setClarifionSelected(!clarifionSelected);
   };
 
+  const [videoactive, setVideoactive] = useState(false);
+  const toggleVideo = () => {
+    setVideoactive(!videoactive);
+  };
+
   return(
-    <div className="flex flex-col items-center text-black mt-10 px-5 md:px-16 lg:px-32 bg-white">
+    <div className="flex flex-col items-center text-black mt-10 px-5 md:px-16 lg:px-20 xl:px-32 bg-white">
       <div className='flex w-full justify-between p-5'>
         <img src={logo} alt="logo clarifion" />
         <div className='flex justify-between'>
@@ -65,7 +71,7 @@ const Clarifion = ()=> {
           Confirmation
         </div>
       </div>
-      { clarifionSelected? (<img className="my-6 lg:hidden" id="big-clarifion" src={bigclarifion} alt="bigclarifion" ></img>) : (<div></div>) }
+      { clarifionSelected && (<img className="my-6 lg:hidden" id="big-clarifion" src={bigclarifion} alt="bigclarifion" ></img>) }
       <div className="flex flex-col lg:flex-row lg:bg-[#fafafa] lg:p-10">
         <div className="mr-10">
           <div>
@@ -96,7 +102,7 @@ const Clarifion = ()=> {
           
         </div>
         <div className="w-full">
-          <div className='text-3xl text-center py-6'>
+          <div className='text-3xl text-center py-6 lg:py-0 text-start'>
             <span className="text-blue2">ONE TIME ONLY </span>
             <span className="text-black">Special Price For 6 Extra Clarifion For Only </span>
             <span className="text-blue2">$14 Each </span>
@@ -104,10 +110,14 @@ const Clarifion = ()=> {
           </div>
 
           <div className='w-full'>
-            <div className='flex justify-between w-full'>
-              <img className='hidden bg-blue2 rounded-md mr-4 hover:bg-blue-700 lg:block' src={clarifion} alt="clarifionIMG" />
-              <img className='bg-blue2 rounded-md mr-4 hover:bg-blue-700 lg:hidden' src={clarifion} alt="clarifionIMG" onClick={() => toggleSelected()} />
-              <div className='py-2 flex flex-col justify-between flex-1'>
+            <div className='flex justify-between w-full lg:mt-8'>
+              <div>
+                <img className='hidden bg-blue2 rounded-md mr-4 lg:block' src={clarifion2md} alt="clarifionIMG" />
+              </div>
+              <div>
+                <img className='bg-blue2 rounded-md mr-4 hover:bg-blue-700 lg:hidden' src={clarifion} alt="clarifionIMG" onClick={() => toggleSelected()} />
+              </div>
+              <div className='py-2 flex flex-col justify-between flex-1 lg:py-0'>
                 <div className='flex justify-between text-base'>
                   Clarifion Air Ionizer
                   <div className='flex justify-between items-center'>
@@ -126,9 +136,12 @@ const Clarifion = ()=> {
                   <img className='pr-4' src={smallcircle} alt="O" />
                   <div className='text-sm text-[#37465a] font-light'>12 left in Stock</div>
                 </div>
+                <div className='hidden text-start text-blacktext text-sm my-4 xl:block'>
+                  Simply plug a Clarifion into any standard outlet and replace bulky, expensive air purifiers with a simple.
+                </div>
               </div>
             </div>
-            <div className='text-center text-blacktext text-sm my-4'>
+            <div className='text-center text-blacktext text-sm my-4 xl:hidden'>
               Simply plug a Clarifion into any standard outlet and replace bulky, expensive air purifiers with a simple.
             </div>
           </div>
@@ -159,7 +172,21 @@ const Clarifion = ()=> {
               <span className="text-blue2"> $14 Each.</span></div>
           </div>
 
-          <button className="bg-[#59ae43] text-white flex items-center w-full justify-center rounded-[36px]">
+          { videoactive && (
+            <div className="flex justify-center">
+              <iframe
+                width="360"
+                height="215"
+                src="https://www.youtube.com/embed/dQw4w9WgXcQ?autoplay=1"
+                title="YouTube video player"
+                allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
+                allowFullScreen
+              />
+            </div>
+            
+          ) }
+
+          <button className="bg-[#59ae43] text-white flex items-center w-full justify-center rounded-[36px]" onClick={() => toggleVideo()}>
             <div className="flex py-4">
               <div className="text-base text-bold pr-4">YES - CLAIM MY DISCOUNT</div>
               <img src={arrow} alt="arrow" />
