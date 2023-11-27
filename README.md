@@ -45,7 +45,7 @@ clarifion, is a webpage built with Vite, React-Redux and TailwindCSS, that displ
 
 ## Live demo <a name="live-demo"></a>
 
-Link to the live demo [here](https://www.youtube.com/watch?v=dQw4w9WgXcQ)
+Link to the live demo [here](https://clarifion-vbv6.onrender.com/)
 
 ## 💻 Getting Started <a name="getting-started"></a>
 <!-- https://github.com/EmiLoKiJu/clarifion -->
