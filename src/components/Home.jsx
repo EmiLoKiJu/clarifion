@@ -1,7 +1,8 @@
 import { Outlet } from "react-router-dom";
 import Nav from "./Nav";
+import Footer from "./Footer";
 
-const Home = ()=> {
+const Home = () => {
   return(
     <div className="w-full flex flex-col">
       <Nav />
@@ -10,6 +11,7 @@ const Home = ()=> {
             <Outlet/>
         </main>
       </div>
+      <Footer />
     </div>
   );
 }

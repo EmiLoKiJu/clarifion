@@ -1,9 +1,9 @@
 import { configureStore } from '@reduxjs/toolkit';
-import popupReducer from './popup/popupSlice';
+import navtextReducer from './navtext/navtextSlice';
 
 const store = configureStore({
   reducer: {
-    popup: popupReducer,
+    navtext: navtextReducer,
   },
 });
 
