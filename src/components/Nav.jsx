@@ -17,13 +17,23 @@ const Nav = ()=> {
 
   return(
     <div className='font-manrope z-50 flex flex-col fixed'>
-      <nav className="bg-black2 flex justify-between items-center fixed w-full text-sm text-white">
+      <nav className="bg-black2 flex justify-between items-center fixed w-full text-sm text-white lg:invisible">
         <img className='px-5' src={prevarrow} alt="prev" onClick={() => dispatch(prev())} />
         <div className='flex justify-center items-center'>
           <img className='py-[10px] pr-2' src={imgurl[navtext.current]} alt="current" />
           {navtext.textarr[navtext.current]}
         </div>
         <img className='px-5' src={nextarrow} alt="next" onClick={() => dispatch(next())} />
+      </nav>
+      <nav className="invisible bg-black2 flex justify-center items-center fixed w-full text-sm text-white lg:visible">
+        <div className='flex w-full justify-around items-center'>
+          {navtext.textarr.map((currenttext, index) => (
+            <div className='flex justify-center items-center' key={index}>
+              <img className='py-[10px] pr-2' src={imgurl[index]} alt="current" />
+              {currenttext}
+            </div>
+          ))}
+        </div>
       </nav>
     </div>
   );

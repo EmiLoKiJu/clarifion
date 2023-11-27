@@ -30,7 +30,7 @@ const Clarifion = ()=> {
   };
 
   return(
-    <div className="flex flex-col items-center text-black mt-10 px-5">
+    <div className="flex flex-col items-center text-black mt-10 px-5 md:px-16 lg:px-32">
       <div className='flex w-full justify-between bg-white p-5'>
         <img src={logo} alt="logo clarifion" />
         <div className='flex justify-between'>
@@ -115,7 +115,7 @@ const Clarifion = ()=> {
         </div>
       </div>
 
-      <div className="flex items-center justify-between w-full text-base px-4 py-3 bg-white2 rounded-md my-6">
+      <div className="flex items-center justify-center w-full text-base px-4 py-3 bg-white2 rounded-md my-6">
         <img className="" src={discount} alt="percent" /> 
         <div className="px-4">
           Save 
@@ -134,11 +134,13 @@ const Clarifion = ()=> {
       </button>
 
       <div className="flex flex-col px-4 py-2 rounded border border-[#cfcfcf] my-3 text-sm w-full items-center">
-        <div className="flex w-full justify-between items-center  ">
+        <div className="flex w-full justify-between items-center md:justify-around">
           <div>Free shipping</div>
           <span className="flex h-[14px] w-[1px] bg-[#cfcfcf]"></span>
-          <img src={lock} alt="lock" />
-          <div>Secure 256-bit SSL encryption</div>
+          <div className="flex">
+            <img src={lock} alt="lock" />
+            <div className="ml-2">Secure 256-bit SSL encryption</div>
+          </div>
         </div>
         <span className="flex h-[1px] w-full bg-[#cfcfcf] my-3"></span>
         <div className="flex">
