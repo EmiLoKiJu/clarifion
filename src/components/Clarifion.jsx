@@ -20,7 +20,7 @@ const Clarifion = ()=> {
       </div>
       <div className='pt-[50px]'>
         <h1 className='text-4xl text-center'>Wait ! Your Order In Progress.</h1>
-        <h2 className='text-xl text-black2 text-center pt-1 pb-6'>Lorem Ipsum Dolor Sit Amet, Consectetur Adipiscing</h2>
+        <h2 className='text-xl text-blacktext text-center pt-1 pb-6'>Lorem Ipsum Dolor Sit Amet, Consectetur Adipiscing</h2>
       </div>
       <div className='flex w-full justify-between'>
         <div className='flex flex-col items-center text-base text-center'>
@@ -48,26 +48,30 @@ const Clarifion = ()=> {
       </div>
       <div className='w-full'>
         <div className='flex justify-between w-full'>
-          <img className='bg-blue2 rounded-md' src={clarifion} alt="clarifionIMG" />
-          <div>
-            <div className='flex justify-between'>
+          <img className='bg-blue2 rounded-md mr-4' src={clarifion} alt="clarifionIMG" />
+          <div className='py-2 flex flex-col justify-between flex-1'>
+            <div className='flex justify-between text-[14px]'>
               Clarifion Air Ionizer
               <div className='flex justify-between items-center'>
-                <div className='text-sm'>$180</div>
+                <div className='text-sm line-through text-[#969696] mr-2'>$180</div>
                 <div className='text-[14px]'>$84</div>
               </div>
             </div>
-            <div className='flex'>
+            <div className='flex py-3'>
               <img src={star} alt="star" />
               <img src={star} alt="star" />
               <img src={star} alt="star" />
               <img src={star} alt="star" />
               <img src={star} alt="star" />
             </div>
-            <div>
-              <img src={smallcircle} alt="O" />
+            <div className='flex'>
+              <img className='pr-4' src={smallcircle} alt="O" />
+              <div className='text-base text-[#37465a] font-light'>12 left in Stock</div>
             </div>
           </div>
+        </div>
+        <div className='text-center text-blacktext text-base my-4'>
+          Simply plug a Clarifion into any standard outlet and replace bulky, expensive air purifiers with a simple.
         </div>
       </div>
       
