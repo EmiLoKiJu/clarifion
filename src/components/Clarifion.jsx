@@ -22,6 +22,9 @@ import gpay from '@/assets/gpay.svg';
 import applepay from '@/assets/apple-pay.svg';
 import amex from '@/assets/amex.svg';
 import satisfaction from '@/assets/satisfaction.svg';
+import user1 from '@/assets/user1.png';
+import star2 from '@/assets/star2.svg';
+import verified from '@/assets/Verified.svg';
 
 const Clarifion = ()=> {
   const [clarifionSelected, setClarifionSelected] = useState(false);
@@ -64,11 +67,33 @@ const Clarifion = ()=> {
       </div>
       { clarifionSelected? (<img className="my-6 lg:hidden" id="big-clarifion" src={bigclarifion} alt="bigclarifion" ></img>) : (<div></div>) }
       <div className="flex flex-col lg:flex-row lg:bg-[#fafafa] lg:p-10">
-        <div>
-          <img className="hidden lg:block" id="big-clarifion" src={bigclarifion} alt="bigclarifion" ></img>
+        <div className="mr-10">
           <div>
-
+            <img className="hidden lg:block" id="big-clarifion" src={bigclarifion} alt="bigclarifion" ></img>
+            <div className="hidden lg:flex flex-col">
+              <div className="flex">
+                <div>
+                  <img src={user1} alt="user" />
+                </div>
+                <div>
+                  <div className="flex">
+                    <img src={star2} alt="star" />
+                    <img src={star2} alt="star" />
+                    <img src={star2} alt="star" />
+                    <img src={star2} alt="star" />
+                    <img src={star2} alt="star" />
+                  </div>
+                  <div className="flex">
+                    <div>Ken T.</div>
+                    <img src={verified} alt="verifiedicon" />
+                    <div>Verified Customer</div>
+                  </div>
+                </div>
+              </div>
+              <div>“As soon as the Clarifions arrived I put one in my bedroom. This was late in the afternoon. When I went to the bedroom in the evening it smelled clean. When I went to bed I felt I could breathe better. Wonderful.”</div>
+            </div>
           </div>
+          
         </div>
         <div className="w-full">
           <div className='text-3xl text-center py-6'>
