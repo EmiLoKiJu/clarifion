@@ -48,7 +48,7 @@ const Clarifion = ()=> {
         </div>
       </div>
 
-      <div className='pt-[50px]'>
+      <div className='pt-8'>
         <h1 className='text-4xl text-center md:text-5xl'>Wait ! Your Order In Progress.</h1>
         <h2 className='text-xl text-blacktext text-center pt-1 pb-6 md:text-3xl lg:pb-[60px]'>Lorem Ipsum Dolor Sit Amet, Consectetur Adipiscing</h2>
       </div>
