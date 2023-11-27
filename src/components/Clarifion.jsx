@@ -118,11 +118,11 @@ const Clarifion = ()=> {
                 <img className='bg-blue2 rounded-md mr-4 hover:bg-blue-700 lg:hidden' src={clarifion} alt="clarifionIMG" onClick={() => toggleSelected()} />
               </div>
               <div className='py-2 flex flex-col justify-between flex-1 lg:py-0'>
-                <div className='flex justify-between text-base'>
+                <div className='flex justify-between text-base lg:text-2xl'>
                   Clarifion Air Ionizer
                   <div className='flex justify-between items-center'>
-                    <div className='text-[10px] line-through text-[#969696] mr-2'>$180</div>
-                    <div className='text-base text-blue2 font-semibold'>$84</div>
+                    <div className='text-[10px] line-through text-[#969696] mr-2 lg:text-xl'>$180</div>
+                    <div className='text-base text-blue2 font-semibold lg:text-[22px]'>$84</div>
                   </div>
                 </div>
                 <div className='flex py-3'>
@@ -134,9 +134,9 @@ const Clarifion = ()=> {
                 </div>
                 <div className='flex'>
                   <img className='pr-4' src={smallcircle} alt="O" />
-                  <div className='text-sm text-[#37465a] font-light'>12 left in Stock</div>
+                  <div className='text-sm text-[#37465a] font-light lg:text-xl'>12 left in Stock</div>
                 </div>
-                <div className='hidden text-start text-blacktext text-sm my-4 xl:block'>
+                <div className='hidden text-start text-blacktext text-xl my-4 xl:block'>
                   Simply plug a Clarifion into any standard outlet and replace bulky, expensive air purifiers with a simple.
                 </div>
               </div>
@@ -146,7 +146,7 @@ const Clarifion = ()=> {
             </div>
           </div>
 
-          <div className='text-sm text-blacktext w-full my-1'>
+          <div className='text-sm text-blacktext w-full my-1 lg:text-xl'>
             <div className='flex'>
               <img className='pr-4' src={checkblue} alt="check" />
               <div><span className=''>Negative Ion Technology may</span> <span className='font-bold'>help with allergens</span></div>
@@ -161,7 +161,7 @@ const Clarifion = ()=> {
             </div>
           </div>
 
-          <div className="flex items-center justify-center w-full text-base px-4 py-3 bg-white2 rounded-md my-6">
+          <div className="flex items-center justify-center w-full text-base px-4 py-3 bg-white2 rounded-md my-6 lg:text-xl">
             <img className="" src={discount} alt="percent" /> 
             <div className="px-4">
               Save 
@@ -188,7 +188,7 @@ const Clarifion = ()=> {
 
           <button className="bg-[#59ae43] text-white flex items-center w-full justify-center rounded-[36px]" onClick={() => toggleVideo()}>
             <div className="flex py-4">
-              <div className="text-base text-bold pr-4">YES - CLAIM MY DISCOUNT</div>
+              <div className="text-base text-bold pr-4 lg:text-2xl">YES - CLAIM MY DISCOUNT</div>
               <img src={arrow} alt="arrow" />
             </div>
           </button>
@@ -214,11 +214,11 @@ const Clarifion = ()=> {
             </div>
           </div>
 
-          <div className="font-medium text-[#f82c2c] underline text-sm">
+          <div className="font-medium text-[#f82c2c] underline text-sm lg:text-[18px]">
             NO THANKS, I DON&apos;T WANT THIS.
           </div>
 
-          <div className="flex justify-between items-start mt-6 mb-[50px] text-sm">
+          <div className="flex justify-between items-start mt-6 mb-[50px] text-sm lg:text-xl">
             <img className="mr-4" src={satisfaction} alt="satisfaction guarantee" />
             <div>If you are not completely thrilled with your Clarifion - We have a <span className="font-bold">30 day satisfaction guarantee.</span> Please refer to our return policy at the bottom of the page for more details. Happy Shopping!</div>
           </div>
