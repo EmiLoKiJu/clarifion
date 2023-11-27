@@ -1,7 +1,7 @@
 import { RouterProvider, createBrowserRouter } from 'react-router-dom'
 import Home from '@/components/Home';
 import ErrorPage from '@/components/ErrorPage';
-import Portfolio from '../components/Portfolio';
+import Clarifion from '../components/Clarifion';
 
 export default function Router() {
   const routes = createBrowserRouter([
@@ -12,7 +12,7 @@ export default function Router() {
       children: [
         {
           path: "/",
-          element: < Portfolio/>,
+          element: < Clarifion/>,
           children: []
         },
       ]},
