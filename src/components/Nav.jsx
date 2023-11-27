@@ -17,7 +17,7 @@ const Nav = ()=> {
 
   return(
     <div className='font-manrope z-50 flex flex-col fixed'>
-      <nav className="bg-black2 flex justify-between items-center fixed w-full text-sm text-white lg:invisible">
+      <nav className="bg-black2 flex justify-between items-center fixed w-full text-sm text-white lg:hidden">
         <img className='px-5' src={prevarrow} alt="prev" onClick={() => dispatch(prev())} />
         <div className='flex justify-center items-center'>
           <img className='py-[10px] pr-2' src={imgurl[navtext.current]} alt="current" />
@@ -25,7 +25,7 @@ const Nav = ()=> {
         </div>
         <img className='px-5' src={nextarrow} alt="next" onClick={() => dispatch(next())} />
       </nav>
-      <nav className="invisible bg-black2 flex justify-center items-center fixed w-full text-sm text-white lg:visible">
+      <nav className="hidden bg-black2 justify-center items-center fixed w-full text-sm text-white lg:flex">
         <div className='flex w-full justify-around items-center'>
           {navtext.textarr.map((currenttext, index) => (
             <div className='flex justify-center items-center' key={index}>
