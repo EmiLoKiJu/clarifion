@@ -1,6 +1,6 @@
 import { useState } from "react";
 
-import logo from '@/assets/logo-with-text.svg';
+import logo from '@/assets/Logo-with-text.svg';
 import mcafee from '@/assets/McAfee-secure.svg';
 import norton from '@/assets/norton-antivirus.svg';
 import checkedstep from '@/assets/checked-step.svg';
